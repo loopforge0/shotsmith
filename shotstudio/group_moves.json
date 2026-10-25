@@ -1,0 +1,38 @@
+{
+  "_comment": "Group versions of the moves that can hold two or three characters at once. The library's recipes are written around one subject (the orbit circles <Subject 1>, and the group's action then happens after it). These keep the same camera clause but aim it at the whole group, and put the action inside the move. {GROUP} is '<Subject 1> and <Subject 2>', {N_SHOT} is 'two-shot' or 'three-shot', {N_PEOPLE} is 'the two of them' or 'the three of them'. A move is offered for a group only when `tested` is true: a group render of it was watched and held up.",
+  "orbit-360": {
+    "tested": true,
+    "line": "A medium {N_SHOT} frames {GROUP} standing close together {PLACE}, facing each other, with {ENVIRONMENT_ELEMENTS} behind them. The camera performs an arc shot around {GROUP} with large amplitude at fast speed, sweeping one complete circle around {N_PEOPLE} together and coming back to the front, keeping everyone in frame the whole time. They stay where they are through the sweep.",
+    "summary_action": "standing close together",
+    "framing_summary": "a medium {N_SHOT}",
+    "lead": "While the camera circles them,"
+  },
+  "aerial-pullback": {
+    "tested": true,
+    "line": "A medium {N_SHOT} frames {GROUP} standing together {PLACE}, with {ENVIRONMENT_ELEMENTS} behind them. The camera pulls out with large amplitude at fast speed while pedestalling up, rising and retreating until {N_PEOPLE} are small figures far below and the whole {LOCATION} opens out around them.",
+    "summary_action": "standing together",
+    "framing_summary": "a medium {N_SHOT}",
+    "lead": "As the camera rises away from them,"
+  },
+  "crane-rise": {
+    "tested": true,
+    "line": "A medium {N_SHOT} frames {GROUP} running side by side {PLACE}, hair flying and clothing snapping with the movement, with {ENVIRONMENT_ELEMENTS} behind them. The camera starts low at ground level beside them as they move, then performs a tracking shot with large amplitude at fast speed, pedestalling up and tilting down to follow {N_PEOPLE} from high overhead while they stay centred and sharp in frame.",
+    "summary_action": "running side by side",
+    "framing_summary": "a medium {N_SHOT}",
+    "lead": "As they run,"
+  },
+  "handheld": {
+    "tested": true,
+    "line": "A medium {N_SHOT} frames {GROUP} running side by side {PLACE}, hair flying and clothing snapping with the movement, with {ENVIRONMENT_ELEMENTS} behind them. The camera shakes strongly at fast speed while performing a tracking shot alongside {N_PEOPLE} as they move, the frame lurching and correcting with every stride.",
+    "summary_action": "running side by side",
+    "framing_summary": "a medium {N_SHOT}",
+    "lead": "As they run,"
+  },
+  "dutch-angle": {
+    "tested": true,
+    "line": "A medium {N_SHOT} frames {GROUP} standing together {PLACE}, with {ENVIRONMENT_ELEMENTS} behind them. The camera rolls {ROLL_DIRECTION} into a canted dutch angle and holds there, the horizon tilted, {N_PEOPLE} off-axis.",
+    "summary_action": "standing together",
+    "framing_summary": "a medium {N_SHOT}",
+    "lead": "Through the shot,"
+  }
+}

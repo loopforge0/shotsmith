@@ -1,0 +1,5 @@
+comfy-sdk>=0.5
+comfy-api-proxy>=0.1.6
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9

@@ -1,0 +1,804 @@
+{
+ "crash-zoom-in": {
+  "cast": [
+   "amber-main"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Arctic shore"
+  },
+  "text": "@Amber's expression shifts from blank and neutral into dawning realization and slight shock.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still on a snow-covered arctic coastline, in a wide shot, as the camera performs a crash zoom in.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A wide shot places <Subject 1> small and complete in frame on the snowy rocky shore, standing in place on the snowy rocky shore, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with dark rocky cliffs, patches of green aurora borealis in the sky, still water, and an old wooden sailing ship with tall masts behind her. The camera is locked off on a tripod and holds the wide shot completely still for the first second only; only the zoom lens changes and the camera body never moves. Between one frame and the next the lens crash zooms in to a tight close-up of her face: the whole change takes only two or three frames, as abrupt as a cut, with a streak of zoom blur on those few frames only, and nothing shifts against anything else, the background simply magnifies flat together with her. After it lands, the close-up is locked for the whole rest of the shot, at least the last two seconds, and does not change. As the shot plays out, <Subject 1>'s expression shifts from blank and neutral into dawning realization and slight shock.\n\noverall_soundscape: A faint cold wind continues throughout, with distant creaking from the ship's rigging\n\nnon_diegetic_music: A single sustained low string note swells partway through the shot, then fades toward the end\n",
+  "take": "crash-zoom-in_7_79a825e7f64c.mp4",
+  "rebuilds": "exact"
+ },
+ "yoyo-zoom": {
+  "cast": [
+   "sofia"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Rooftop at golden hour"
+  },
+  "text": "Her easy smile turns to startled bewilderment as the world tears away and slams back.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 192,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still on a city rooftop terrace at golden hour, in a tight close-up, as the camera performs a yo-yo zoom.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A tight close-up fills the frame with her face. <Subject 1> is standing in place on the rooftop deck, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with string lights, potted olive trees, a glass railing and distant towers behind her. The camera begins in a tight close-up on her face, then zooms out, starting slowly and accelerating harder and harder as it goes until the whole view smears into motion blur and <Subject 1> has fallen away into the far distance, a tiny figure on the rooftop deck. The camera holds there for about a second, then zooms back in with large amplitude at fast speed, snapping across the entire distance in a single instant to land tight on her face again exactly as it began. As the shot plays out, Her easy smile turns to startled bewilderment as the world tears away and slams back.\n\noverall_soundscape: City traffic far below and wind moving through the string lights\n\nnon_diegetic_music: N/A\n",
+  "take": "yoyo-zoom_7_6c2d4a508c0c.mp4",
+  "rebuilds": "exact"
+ },
+ "dolly-zoom": {
+  "cast": [
+   "amber-main"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Autumn forest track"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still in a pine forest in late autumn, in a waist-up medium close-up, as the camera performs a dolly zoom.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A close-up frames <Subject 1>'s head and shoulders, standing completely still on the forest track, facing the camera, with tall straight pine trunks, a carpet of orange needles, low mist between the trees, and shafts of sunlight behind her. The camera performs a Hitchcock dolly zoom, the Vertigo effect: it pushes in while simultaneously zooming out, so that <Subject 1>'s size and position in frame stay exactly constant throughout, while the tall tree trunks, the low mist between them and the shafts of sunlight behind her recede, shrink, and spread apart into much greater depth as the lens's focal length changes. As the background stretches away, her expression shifts from calm to dawning realisation, then to shock: her eyes widen, her brows lift and her lips part.\n\noverall_soundscape: Birdsong and a light breeze through the pines throughout, with needles crunching underfoot\n\nnon_diegetic_music: N/A\n",
+  "take": "dolly-zoom_7_7565a3c0d03c.mp4",
+  "rebuilds": "differs"
+ },
+ "snorricam": {
+  "cast": [
+   "allie"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Autumn forest track"
+  },
+  "text": "@Allie's expression is hard, fixed determination, eyes locked forward and jaw tight, never once looking at the camera.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the young woman in <Picture 1>: long light brown wavy hair, fair freckled skin, round gold-rimmed glasses, wearing a simple white slip dress with thin straps.\n\nsummary:\n[reference generation] The target video shows <Subject 1> walking steadily forward in a pine forest in late autumn, in a tight close-up locked on her face, as the camera performs a snorricam shot.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic, shot on an ARRI Alexa with a Cooke S4 50mm lens, low golden afternoon sunlight cutting through the trees in shafts, a warm amber and green palette.\n[Shot 1] A tight close-up of her face, only her head and shoulders in frame, the lens about an arm's length in front of her and facing back at her. <Subject 1> is walking steadily forward on the forest track, hair flying and clothing snapping with the movement, with tall straight pine trunks, a carpet of orange needles, low mist between the trees, and shafts of sunlight behind her. <Subject 1> walks steadily forward while the camera, fixed rigidly to her at arm's length, holds her face locked dead-centre at exactly the same size and position throughout, so her face never moves in the frame; the whole background lurches, sways and swings behind her with every stride and streaks past with motion blur, while her face stays sharp. As the shot plays out, <Subject 1>'s expression is hard, fixed determination, eyes locked forward and jaw tight, never once looking at the camera.\n\noverall_soundscape: Birdsong and a light breeze through the pines throughout, with needles crunching underfoot\n\nnon_diegetic_music: N/A\n",
+  "take": "snorricam_7_71b541e894e2.mp4",
+  "rebuilds": "differs"
+ },
+ "rack-focus": {
+  "cast": [
+   "kate",
+   "mei",
+   "claire"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Old library"
+  },
+  "text": "@Kate looks up from her book with a faint smile.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>, with shoulder-length dark brown wavy hair, blue-grey eyes and an oatmeal cable-knit sweater.\n<Subject 2> is the person in <Picture 2>, with a straight dark brown shoulder-length bob and a beige crew-neck sweater.\n<Subject 3> is the person in <Picture 3>, with straight shoulder-length auburn hair, light freckles and a burgundy knit jumper.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still in a grand old library hall, in a medium-wide shot holding two depth planes, as the camera performs a rack focus.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (shoulder-length dark brown wavy hair, blue-grey eyes and an oatmeal cable-knit sweater) are held identical to <Picture 1> in every frame with zero drift.\n<Subject 2> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (a straight dark brown shoulder-length bob and a beige crew-neck sweater) are held identical to <Picture 2> in every frame with zero drift.\n<Subject 3> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (straight shoulder-length auburn hair, light freckles and a burgundy knit jumper) are held identical to <Picture 3> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A medium-wide shot holds two distinct depth planes at once: <Subject 1> close to camera and a grand old library hall opening out well behind her. <Subject 1> is standing in place between the long reading tables, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with tall wooden bookshelves, a rolling ladder, green-shaded brass lamps and arched windows behind her. The camera holds a static shot. <Subject 1> sits close to camera in sharp focus while <Subject 2> and <Subject 3> stand talking together far behind her, soft and unfocused. The focus then racks from her face to the two of them, and <Subject 1> falls into soft blur exactly as they resolve sharply. As the shot plays out, <Subject 1> looks up from her book with a faint smile.\n\noverall_soundscape: The hush of a large quiet room, a clock ticking somewhere and a page turning far away\n\nnon_diegetic_music: N/A\n",
+  "take": "rack-focus_7_e0589df8dd08.mp4",
+  "rebuilds": "exact"
+ },
+ "split-screen": {
+  "cast": [
+   "allie"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Rain-soaked city street"
+  },
+  "text": "@Allie's expression moves from guarded and tired into quiet resolve.",
+  "extras": {
+   "ACTION": "standing at a bus stop in the rain checking her phone, the screen lighting her face",
+   "ACTION_SHORT": "checking her phone",
+   "PANEL_1_ANGLE": "her from her left side in profile",
+   "PANEL_2_ANGLE": "the front, the phone glow on her face",
+   "PANEL_3_ANGLE": "her from behind, the street stretching away beyond her"
+  },
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 192,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> checking her phone in a narrow city street at night in heavy rain, in a frame divided into three equal vertical panels, as the camera performs a three-panel split screen.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] The frame is divided into three equal vertical panels side by side, separated by thin black gutters. The left panel holds <Subject 1>, standing at a bus stop in the rain checking her phone, the screen lighting her face. Every panel is locked off and completely static; nothing pans, zooms or moves at any point. The three panels open one after another. The left panel plays from the very first frame, showing her from her left side in profile, while the centre and right panels are solid black. The centre panel stays solid black and then comes on, showing the same moment from the front, the phone glow on her face. The right panel stays solid black longer than the centre one and comes on last, showing her from behind, the street stretching away beyond her. For the remainder of the shot all three panels play together in perfect sync, the same continuous checking her phone at the same instant from three different angles. As the shot plays out, <Subject 1>'s expression moves from guarded and tired into quiet resolve.\n\noverall_soundscape: Steady heavy rain on the street and on car roofs throughout, with a distant siren passing\n\nnon_diegetic_music: N/A\n",
+  "take": "split-screen_7_ad8c2aa9a635.mp4",
+  "rebuilds": "exact"
+ },
+ "whip-pan": {
+  "cast": [
+   "amber-main",
+   "sofia"
+  ],
+  "objects": [],
+  "location": {
+   "image": "Autumn forest track"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 532273838,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n<Subject 2> is the person in <Picture 2>.\n<Subject 3> is the environment in <Picture 3>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still in the location shown in <Picture 3>, in a waist-up medium close-up, as the camera performs a whip pan.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n<Subject 2> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 2> in every frame with zero drift.\n<Subject 3> (appears in [Shot 1]): fully_preserved - the environment's layout, materials and look are held to <Picture 3> throughout.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A waist-up medium close-up frames <Subject 1>, standing in place in the location shown in <Picture 3>, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with the surroundings shown in <Picture 3> behind her. The camera starts framed on <Subject 1>, then whip pans right away from her and lands on <Subject 2> On the left, on a boat that is floating in the water, the surroundings shown in <Picture 3> between them smearing into streaked horizontal motion blur through the middle of the move, the frame settling and resolving sharply on <Subject 2>. The shot ends held on <Subject 2>, not on <Subject 1>.\n\noverall_soundscape: The natural ambient sound of the location\n\nnon_diegetic_music: N/A\n",
+  "take": "whip-pan_532273838_3c9b2a2326e7.mp4",
+  "rebuilds": "exact"
+ },
+ "dutch-angle": {
+  "cast": [
+   "lena",
+   "amber-main",
+   "allie"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Castle dungeon"
+  },
+  "text": "@Lena lifts a hand toward the dark staircase while @Amber and @Allie peer past her shoulders, uneasy.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>, with wavy dark hair with pink and blue streaks, gold disc earrings, a small leaf tattoo on her neck and an oatmeal knit sweater.\n<Subject 2> is the person in <Picture 2>, with long wavy ginger-red hair, freckles, a cream short-sleeve t-shirt, a dark cord necklace with a metal cross, and high-waisted blue jeans with a brown belt.\n<Subject 3> is the person in <Picture 3>, with long light brown wavy hair, gold-rimmed round glasses and a white slip dress.\n\nsummary:\n[reference generation] The target video shows <Subject 1>, <Subject 2> and <Subject 3> standing together in a medieval castle dungeon, in a medium three-shot, as the camera performs a dutch angle.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (wavy dark hair with pink and blue streaks, gold disc earrings, a small leaf tattoo on her neck and an oatmeal knit sweater) are held identical to <Picture 1> in every frame with zero drift.\n<Subject 2> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (long wavy ginger-red hair, freckles, a cream short-sleeve t-shirt, a dark cord necklace with a metal cross, and high-waisted blue jeans with a brown belt) are held identical to <Picture 2> in every frame with zero drift.\n<Subject 3> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (long light brown wavy hair, gold-rimmed round glasses and a white slip dress) are held identical to <Picture 3> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A medium three-shot frames <Subject 1>, <Subject 2> and <Subject 3> standing together in the torchlit passage, with rough stone walls, rusted iron cell bars, flaming torches and hanging chains behind them. The camera rolls counterclockwise into a canted dutch angle and holds there, the horizon tilted, the three of them off-axis. Through the shot, <Subject 1> lifts a hand toward the dark staircase while <Subject 2> and <Subject 3> peer past her shoulders, uneasy.\n\noverall_soundscape: Water dripping on stone, torches crackling and a chain creaking somewhere in the dark\n\nnon_diegetic_music: N/A\n",
+  "take": "dutch-angle_7_2eda8db8b712.mp4",
+  "rebuilds": "exact"
+ },
+ "super-dolly-in": {
+  "cast": [
+   "kate"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Arctic shore"
+  },
+  "text": "@Kate's expression shifts from blank and neutral into dawning realization and slight shock: her eyes widen and focus more intensely, her brow lifts and tightens, her lips part slightly, and her breathing grows visibly shallower and faster, the change building through the middle of the shot and settling into a held, wide-eyed stillness by the end.",
+  "extras": {},
+  "seed": 1596816240,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the young woman in <Picture 1>: shoulder-length dark brown wavy hair, fair skin and blue-grey eyes, wearing a chunky oatmeal cable-knit wool sweater. Her exact facial structure, features and proportions stay identical to <Picture 1> in every frame.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still on a snow-covered arctic coastline, in an extreme wide shot, as the camera performs a super dolly in.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic, shot on an ARRI Alexa with a Cooke Varotal 18-100mm zoom lens, cold blue-green arctic lighting with the aurora glowing softly overhead, a slightly desaturated palette.\n[Shot 1] An extreme wide shot looks straight down the rocky shore, two near boulders rising close at the left and right edges of frame, and places <Subject 1> small and distant at the far end of it, standing in place on the snowy rocky shore, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with dark rocky cliffs, patches of green aurora borealis in the sky, still water, and an old wooden sailing ship with tall masts behind her. The camera pushes in with large amplitude at fast speed, charging the entire length of the rocky shore toward her: two near boulders sweep outward past the edges of frame and out of shot as the camera passes them, further rocks rush by on both sides and the snow streams underneath, and the move ends in a tight close-up with her face filling the frame. As the shot plays out, <Subject 1>'s expression shifts from blank and neutral into dawning realization and slight shock: her eyes widen and focus more intensely, her brow lifts and tightens, her lips part slightly, and her breathing grows visibly shallower and faster, the change building through the middle of the shot and settling into a held, wide-eyed stillness by the end.\n\noverall_soundscape: A faint cold wind continues throughout, with distant creaking from the ship's rigging\n\nnon_diegetic_music: A single sustained low string note swells partway through the shot, then fades toward the end\n",
+  "take": "super-dolly-in_1596816240_43cce8fdfaa7.mp4",
+  "rebuilds": "differs"
+ },
+ "eyes-in": {
+  "cast": [
+   "kate"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Old library"
+  },
+  "text": "@Kate's expression moves from calm into quiet wonder, eyes steady on the lens.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still in a grand old library hall, in a waist-up medium close-up, as the camera performs a eyes in.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A waist-up medium close-up frames <Subject 1>, standing in place between the long reading tables, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with tall wooden bookshelves, a rolling ladder, green-shaded brass lamps and arched windows behind her. The camera pushes in with large amplitude at slow speed toward her face and keeps going past it until her right eye, the iris and pupil filling the view fills the entire frame edge to edge. As the shot plays out, <Subject 1>'s expression moves from calm into quiet wonder, eyes steady on the lens.\n\noverall_soundscape: The hush of a large quiet room, a clock ticking somewhere and a page turning far away\n\nnon_diegetic_music: N/A\n",
+  "take": "eyes-in_7_f6a840a27469.mp4",
+  "rebuilds": "differs"
+ },
+ "aerial-pullback": {
+  "cast": [
+   "claire",
+   "lena",
+   "sofia"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Beach at sunset"
+  },
+  "text": "the three of them stand together on the sand and wave up at the sky.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>, with straight shoulder-length auburn hair, light freckles and a burgundy knit jumper.\n<Subject 2> is the person in <Picture 2>, with wavy dark hair with pink and blue streaks, gold disc earrings, a small leaf tattoo on her neck and an oatmeal knit sweater.\n<Subject 3> is the person in <Picture 3>, with long dark brown wavy hair, a white lace-trimmed cropped camisole and high-waisted beige trousers.\n\nsummary:\n[reference generation] The target video shows <Subject 1>, <Subject 2> and <Subject 3> standing together on a wide beach at sunset, in a medium three-shot, as the camera performs an aerial pullback.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (straight shoulder-length auburn hair, light freckles and a burgundy knit jumper) are held identical to <Picture 1> in every frame with zero drift.\n<Subject 2> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (wavy dark hair with pink and blue streaks, gold disc earrings, a small leaf tattoo on her neck and an oatmeal knit sweater) are held identical to <Picture 2> in every frame with zero drift.\n<Subject 3> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (long dark brown wavy hair, a white lace-trimmed cropped camisole and high-waisted beige trousers) are held identical to <Picture 3> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A medium three-shot frames <Subject 1>, <Subject 2> and <Subject 3> standing together on the wet sand, with a lifeguard tower, wooden groynes, gentle waves and a distant pier behind them. The camera pulls out with large amplitude at fast speed while pedestalling up, rising and retreating until the three of them are small figures far below and the whole the wide beach opens out around them. As the camera rises away from them, the three of them stand together on the sand and wave up at the sky.\n\noverall_soundscape: Gentle waves breaking and gulls calling in the distance\n\nnon_diegetic_music: N/A\n",
+  "take": "aerial-pullback_7_85b807b30837.mp4",
+  "rebuilds": "exact"
+ },
+ "handheld": {
+  "cast": [
+   "sofia",
+   "claire",
+   "kate"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Neon megacity"
+  },
+  "text": "the three of them run side by side through the street, glancing back over their shoulders.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>, with long dark brown wavy hair, a white lace-trimmed cropped camisole and high-waisted beige trousers.\n<Subject 2> is the person in <Picture 2>, with straight shoulder-length auburn hair, light freckles and a burgundy knit jumper.\n<Subject 3> is the person in <Picture 3>, with shoulder-length dark brown wavy hair, blue-grey eyes and an oatmeal cable-knit sweater.\n\nsummary:\n[reference generation] The target video shows <Subject 1>, <Subject 2> and <Subject 3> running side by side on a cyberpunk megacity street at night, in a medium three-shot, as the camera performs a handheld tracking shot.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (long dark brown wavy hair, a white lace-trimmed cropped camisole and high-waisted beige trousers) are held identical to <Picture 1> in every frame with zero drift.\n<Subject 2> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (straight shoulder-length auburn hair, light freckles and a burgundy knit jumper) are held identical to <Picture 2> in every frame with zero drift.\n<Subject 3> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (shoulder-length dark brown wavy hair, blue-grey eyes and an oatmeal cable-knit sweater) are held identical to <Picture 3> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A medium three-shot frames <Subject 1>, <Subject 2> and <Subject 3> running side by side on the rain-slicked street, hair flying and clothing snapping with the movement, with towers covered in holographic adverts, an elevated train track, flying cars and neon stalls behind them. The camera shakes strongly at fast speed while performing a tracking shot alongside the three of them as they move, the frame lurching and correcting with every stride. As they run, the three of them run side by side through the street, glancing back over their shoulders.\n\noverall_soundscape: A dense city hum, an overhead train rattling past and distant electronic announcements\n\nnon_diegetic_music: N/A\n",
+  "take": "handheld_7_9fa15a139f61.mp4",
+  "rebuilds": "exact"
+ },
+ "orbit-360": {
+  "cast": [
+   "amber-main",
+   "kate"
+  ],
+  "objects": [
+   "lantern"
+  ],
+  "location": {
+   "scene": "Arctic shore"
+  },
+  "text": "@Amber turns to @Kate and holds out the @Lantern. @Amber, with a soft, warm voice, says \"This was my grandfather's.\" @Kate takes it and lifts it to her face, smiling. @Kate, with a bright, surprised voice, says \"And it still works?\"",
+  "extras": {},
+  "seed": 779365550,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n<Subject 2> is the person in <Picture 2>.\n<Subject 3> is the object in <Picture 3>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> and <Subject 2> standing close together on a snow-covered arctic coastline, in a medium two-shot, as the camera performs a 360 orbit.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n<Subject 2> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 2> in every frame with zero drift.\n<Subject 3> (appears in [Shot 1]): fully_preserved - its shape, materials and markings are held to <Picture 3>.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A medium two-shot frames <Subject 1> and <Subject 2> standing close together on the snowy rocky shore, facing each other, with dark rocky cliffs, patches of green aurora borealis in the sky, still water, and an old wooden sailing ship with tall masts behind them. The camera performs an arc shot around <Subject 1> and <Subject 2> with large amplitude at fast speed, sweeping one complete circle around the two of them together and coming back to the front, keeping everyone in frame the whole time. They stay where they are through the sweep. While the camera circles them, <Subject 1> turns to <Subject 2> and holds out the <Subject 3>. <Subject 1> (S1), with a soft, warm voice, says: <d>[English] This was my grandfather's.</d> <Subject 2> takes it and lifts it to her face, smiling. <Subject 2> (S2), with a bright, surprised voice, says: <d>[English] And it still works?</d>\n\noverall_soundscape: A faint cold wind continues throughout, with distant creaking from the ship's rigging\n\nnon_diegetic_music: A single sustained low string note swells partway through the shot, then fades toward the end\n",
+  "take": "orbit-360_779365550_50ec4b1d7475.mp4",
+  "rebuilds": "differs"
+ },
+ "crane-rise": {
+  "cast": [
+   "amber-main",
+   "kate"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Autumn forest track"
+  },
+  "text": "the two of them run side by side, @Kate half a step ahead.",
+  "extras": {},
+  "seed": 11,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>. Her exact facial structure, features and proportions stay identical to <Picture 1> in every frame.\n<Subject 2> is the person in <Picture 2>. Her exact facial structure, features and proportions stay identical to <Picture 2> in every frame.\n\nsummary:\n[reference generation] The target video shows <Subject 1> and <Subject 2> running side by side in a pine forest in late autumn, in a medium two-shot, as the camera performs a crane rise over the head.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n<Subject 2> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 2> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A medium two-shot frames <Subject 1> and <Subject 2> running side by side on the forest track, hair flying and clothing snapping with the movement, with tall straight pine trunks, a carpet of orange needles, low mist between the trees, and shafts of sunlight behind them. The camera starts low at ground level beside them as they move, then performs a tracking shot with large amplitude at fast speed, pedestalling up and tilting down to follow the two of them from high overhead while they stay centred and sharp in frame. As they run, the two of them run side by side, <Subject 2> half a step ahead.\n\noverall_soundscape: Birdsong and a light breeze through the pines throughout, with needles crunching underfoot\n\nnon_diegetic_music: N/A\n",
+  "take": "crane-rise_11_cc5660a45240.mp4",
+  "rebuilds": "differs"
+ },
+ "arc-left": {
+  "cast": [
+   "claire"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Old library"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still in a grand old library hall, in a waist-up medium close-up, as the camera performs a quarter-circle arc shot.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A waist-up medium close-up frames <Subject 1>, standing in place between the long reading tables, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with tall wooden bookshelves, a rolling ladder, green-shaded brass lamps and arched windows behind her. The camera performs an arc shot to the left at slow speed, travelling a quarter of a circle around her from the front to her side while keeping her centred, so the background swings past behind her, and the shot ends on her profile.\n\noverall_soundscape: The hush of a large quiet room, a clock ticking somewhere and a page turning far away\n\nnon_diegetic_music: N/A\n",
+  "take": "arc-left_7_30acca13114e.mp4",
+  "rebuilds": "exact"
+ },
+ "architecture-wave": {
+  "cast": [
+   "lena"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Tokyo alley"
+  },
+  "text": "@Lena glances up once with a faint smile.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 175,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> in a narrow Tokyo alley at night, walking toward the camera while the surroundings on both sides bend, ripple and fold inward like liquid.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A symmetrical wide shot looks straight ahead in the middle of the lantern-lit alley, and <Subject 1> walks steadily toward the camera from deep in the frame, small at first, with red paper lanterns, izakaya fronts, lit vending machines, parked bicycles and wet paving stones on both sides of her. The camera pulls back slowly ahead of her as she walks. As she comes closer, everything on both sides begins to move like liquid: walls and solid shapes ripple in slow waves, the tops bend and lean inward, and every window, sign and edge warps and flows as the surroundings fold over the top of the frame into an arching tunnel above her. <Subject 1> keeps walking at the same easy pace, unbothered, glancing up once with a faint smile as the world bends around her. As the shot plays out, <Subject 1> glances up once with a faint smile.\n\noverall_soundscape: Muffled chatter and clinking glasses from the bars, the hum of the vending machines and a light drizzle, footsteps, then deep groaning and grinding as the surroundings bend\n\nnon_diegetic_music: A slow, heavy synthwave beat with a deep rising drone\n",
+  "take": "architecture-wave_7_1ded3e6fd02d.mp4",
+  "rebuilds": "exact"
+ },
+ "crane-down": {
+  "cast": [
+   "sofia"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Wild West town"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still in a Wild West frontier town, in a high wide shot from above, as the camera performs a crane down.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A high wide shot from well above looks down on <Subject 1>, standing in place in the middle of the dusty main street, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with a saloon, a general store, hitching posts with horses and a wooden boardwalk behind her. The camera cranes down at slow speed, pedestalling down and tilting up as it descends, and comes to rest at eye level in a medium close-up of her face.\n\noverall_soundscape: A hot dry wind, a horse snorting and a saloon door creaking\n\nnon_diegetic_music: N/A\n",
+  "take": "crane-down_7_1d51d662522d.mp4",
+  "rebuilds": "exact"
+ },
+ "crash-zoom-out": {
+  "cast": [
+   "mei"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Tokyo alley"
+  },
+  "text": "@Mei holds a calm, neutral expression through the close-up, then her eyes flick wide in alarm as the zoom snaps out, lips closed.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still in a narrow Tokyo alley at night, in a tight close-up, as the camera performs a crash zoom out.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A tight close-up fills the frame with <Subject 1>'s face. <Subject 1> is standing in place in the middle of the lantern-lit alley, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with red paper lanterns, izakaya fronts, lit vending machines, parked bicycles and wet paving stones behind her. The camera is locked off on a tripod and holds the tight close-up completely still for the first second only; only the zoom lens changes and the camera body never moves. Between one frame and the next the lens crash zooms out to a wide shot with <Subject 1> small and complete in frame in the middle of the lantern-lit alley: the whole change takes only two or three frames, as abrupt as a cut, with a streak of zoom blur on those few frames only, and nothing shifts against anything else, the background simply shrinks flat together with her. After it lands, the wide framing is locked for the whole rest of the shot, at least the last two seconds, and does not change. As the shot plays out, <Subject 1> holds a calm, neutral expression through the close-up, then her eyes flick wide in alarm as the zoom snaps out, lips closed.\n\noverall_soundscape: Muffled chatter and clinking glasses from the bars, the hum of the vending machines and a light drizzle\n\nnon_diegetic_music: N/A\n",
+  "take": "crash-zoom-out_7_a5e9d608cab9.mp4",
+  "rebuilds": "exact"
+ },
+ "cutaway-montage": {
+  "cast": [
+   "claire"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Desert highway"
+  },
+  "text": "",
+  "extras": {
+   "INSERT_1": "snatch a set of car keys off a dusty bonnet with the right hand",
+   "INSERT_2": "pull the seatbelt across and click it into place",
+   "INSERT_3": "slide on a pair of dark sunglasses with both hands, sitting in the driver's seat",
+   "INSERT_4": "shove the gear stick forward with the right hand, the left hand staying on the steering wheel",
+   "WHERE_IT_ENDS": "in the driver's seat of the car, with the steering wheel, dashboard and windscreen all around, the desert highway beyond and the dark sunglasses on"
+  },
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>, with straight shoulder-length auburn hair, light freckles and a burgundy knit jumper.\n\nsummary:\n[reference generation] The target video shows <Subject 1> on an empty desert highway at golden hour, getting ready in a rapid, rhythmic cut-away montage of quick inserts.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1] to [Shot 7]): fully_preserved - her face, identity and clothing (straight shoulder-length auburn hair, light freckles and a burgundy knit jumper) are held identical to <Picture 1> in every shot, and the hands in the inserts are her own.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A tight close-up frames her face on the centre line of the highway, with red sandstone mesas, wooden telephone poles along the shoulder, a faded road sign and the road running to the horizon soft behind her; her eyes narrow with focus as she decides. [Shot 2] At 00:01.300, the shot cuts to an extreme close-up insert, close on the action as she reaches to snatch a set of car keys off a dusty bonnet with the right hand. [Shot 3] At 00:01.700, the shot cuts to an extreme close-up insert, as she pulls the seatbelt and clicks it into place. [Shot 4] At 00:02.100, the shot cuts to an extreme close-up insert, close on the action as she reaches to slide on a pair of dark sunglasses with both hands, sitting in the driver's seat. [Shot 5] At 00:02.500, the shot cuts to an extreme close-up insert, close on the action as she reaches to shove the gear stick forward with the right hand, the left hand staying on the steering wheel. [Shot 6] At 00:02.900, the shot cuts to an extreme close-up on her face, now in the driver's seat of the car, with the steering wheel, dashboard and windscreen all around, the desert highway beyond and the dark sunglasses on, as her gaze snaps up, sharp and ready. [Shot 7] At 00:03.300, the shot cuts to a tight close-up of her face, still in the driver's seat of the car, with the steering wheel, dashboard and windscreen all around, the desert highway beyond and the dark sunglasses on, now still and ready, and she looks up into the lens with a small, sure smile.\n\noverall_soundscape: A dry desert wind continues throughout, with the faint hum of the telephone wires, cut into a tight rhythm: a sharp click, snap, whoosh or thud on every insert, then a beat of quiet\n\nnon_diegetic_music: N/A\n",
+  "take": "cutaway-montage_7_manual00050.mp4",
+  "place_words": {
+   "the desert highway": "LOCATION"
+  },
+  "rebuilds": "differs"
+ },
+ "disintegration": {
+  "cast": [
+   "kate"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Old library"
+  },
+  "text": "Her warm smile fades into a puzzled frown.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> in a grand old library hall, crumbling away like ash from the top of the head down in one steady sweep, until only the empty setting is left.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> until the crumbling edge reaches them.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A static medium close-up frames <Subject 1> from the chest up, centred between the long reading tables, with tall wooden bookshelves, a rolling ladder, green-shaded brass lamps and arched windows soft behind her, breathing softly, her calm look fading into a puzzled frown as she feels something is wrong. Then she starts to dissolve into dust, beginning at the very top of her head and moving steadily downward in one continuous sweep: first her hair, then her forehead and eyes, then her mouth and chin, then her neck, shoulders and clothes, until the sweep reaches the bottom of the frame. Above the moving edge she is gone; below it she stays completely solid and unchanged, with no marks, lines or cracks anywhere. Exactly at the edge she turns directly into a dense spray of loose grey-brown grains, like dry sand blown off the top of a dune, the grains breaking into finer and finer dust as they lift away, all of it carried off to the left of the frame on a steady wind in a long trailing stream. When the sweep reaches the bottom, nothing of her is left, only the last specks of dust drifting out of the frame. As the shot plays out, Her warm smile fades into a puzzled frown.\n\noverall_soundscape: The hush of a large quiet room, a clock ticking somewhere and a page turning far away, then a dry crackling, crumbling sound like ash and sand as she breaks apart, carried away on a soft rushing wind, fading into silence\n\nnon_diegetic_music: A single soft sustained piano chord that swells as she dissolves and fades out\n",
+  "take": "disintegration_7_52519a8fa4f4.mp4",
+  "rebuilds": "exact"
+ },
+ "dolly-zoom-in": {
+  "cast": [
+   "kate"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Rain-soaked city street"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still in a narrow city street at night in heavy rain, in a waist-up medium close-up, as the camera performs a reverse dolly zoom.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A close-up frames <Subject 1>'s head and shoulders, standing completely still in the middle of the wet street, facing the camera, with glowing shop signs, parked cars beaded with rain, puddles reflecting neon, and steam rising from a grate behind her. The camera performs a reverse Hitchcock dolly zoom, the Jaws effect: it pulls out while simultaneously zooming in, the zoom exactly cancelling the pull, so that <Subject 1>'s size and position in frame stay exactly constant throughout: her head and shoulders fill the same part of the frame from the first frame to the last and she never gets smaller. Only the background changes: the glowing shopfronts, the street lamps and the parked cars behind her grow, flatten, and crowd in close behind her as the lens's focal length changes. As the background crowds in, her expression shifts from calm to dawning dread, then to alarm: her eyes widen, her brows lift and her lips part.\n\noverall_soundscape: Steady heavy rain on the street and on car roofs throughout, with a distant siren passing\n\nnon_diegetic_music: N/A\n",
+  "take": "dolly-zoom-in_7_49dea3255f56.mp4",
+  "rebuilds": "differs"
+ },
+ "fisheye": {
+  "cast": [
+   "lena"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Neon megacity"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 11,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still on a cyberpunk megacity street at night, in a warped, bulging fisheye close-up, as the camera performs a fisheye close-up.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A warped, bulging close-up with the camera almost touching <Subject 1>'s face: the whole picture is curved like the inside of a glass ball, the middle swelling toward the viewer and the edges bending round into a dark rounded border, standing in place on the rain-slicked street, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with towers covered in holographic adverts, an elevated train track, flying cars and neon stalls behind her. The camera pushes in toward her as she leans into the lens, and the warp grows stronger the closer it gets: her nose and the middle of her face balloon toward the viewer while her ears and the setting behind her shrink away and curve around the rim of the frame, and every straight line in the background bends into an arc.\n\noverall_soundscape: A dense city hum, an overhead train rattling past and distant electronic announcements\n\nnon_diegetic_music: N/A\n",
+  "take": "fisheye_11_df1f4bba16fd.mp4",
+  "rebuilds": "exact"
+ },
+ "fpv-drone": {
+  "cast": [
+   "amber-main"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Arctic shore"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still on a snow-covered arctic coastline, in a high aerial wide shot, as the camera performs a racing-drone dive.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] An aerial wide shot from high above a snow-covered arctic coastline looks down on <Subject 1>, a tiny figure far below, standing in place on the snowy rocky shore, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with dark rocky cliffs, patches of green aurora borealis in the sky, still water, and an old wooden sailing ship with tall masts behind her. The camera flies like a racing FPV drone: it dives steeply at fast speed, rolls and banks through the air, skims low and fast over the ground toward her, then pulls up and slows to a stop in a medium shot of <Subject 1>, her face sharp in frame.\n\noverall_soundscape: A faint cold wind continues throughout, with distant creaking from the ship's rigging\n\nnon_diegetic_music: A single sustained low string note swells partway through the shot, then fades toward the end\n",
+  "take": "fpv-drone_7_1fef98e48ea2.mp4",
+  "rebuilds": "exact"
+ },
+ "giant": {
+  "cast": [
+   "claire"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Beach at sunset"
+  },
+  "text": "@Claire looks around with curiosity.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> on a wide beach at sunset, grown to a towering giant, walking slowly through the place while tiny people flee.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift, only her scale changes.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A low-angle wide shot looks up on the wet sand. <Subject 1>, grown to the height of a six-storey building, walks slowly toward the camera through the middle of it, towering over a lifeguard tower, wooden groynes, gentle waves and a distant pier, her hair swinging with each step, her expression curious as she looks around. Tiny people run past the lens in panic, and the ground shakes with each footfall. The camera tilts up slowly to keep her in frame. As the shot plays out, <Subject 1> looks around with curiosity.\n\noverall_soundscape: Gentle waves breaking and gulls calling in the distance, people shouting and running, and heavy ground-shaking footfalls\n\nnon_diegetic_music: A slow, awed orchestral swell with low strings and a distant choir\n",
+  "take": "giant_7_a9e6d86bc67f.mp4",
+  "rebuilds": "exact"
+ },
+ "hero-spin": {
+  "cast": [
+   "amber-main"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Surface of Mars"
+  },
+  "text": "@Amber's face moves from strain to fierce resolve as she rises.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>, with long wavy ginger-red hair, freckles, a cream short-sleeve t-shirt, a dark cord necklace with a metal cross, and high-waisted blue jeans with a brown belt.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still on the surface of Mars, in a low-angle medium shot, as the camera performs a hero spin.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (long wavy ginger-red hair, freckles, a cream short-sleeve t-shirt, a dark cord necklace with a metal cross, and high-waisted blue jeans with a brown belt) are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A low-angle medium shot looks up at <Subject 1>, crouched low, standing in place on the red rocky plain, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with rust-red boulders, jagged cliffs, a white landing module and a butterscotch sky behind her. The camera sits low near the ground and performs an arc shot around her with large amplitude at fast speed, circling her while looking up, as she slowly rises from the crouch to full height, the sky wheeling behind her. As the shot plays out, <Subject 1>'s face moves from strain to fierce resolve as she rises.\n\noverall_soundscape: A thin, faint wind and fine dust hissing over the rocks\n\nnon_diegetic_music: N/A\n",
+  "take": "hero-spin_7_b98c5e8991a6.mp4",
+  "rebuilds": "exact"
+ },
+ "incline": {
+  "cast": [
+   "amber-main"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Wild West town"
+  },
+  "text": "@Amber grins as things slide past.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 175,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> in a Wild West frontier town, staying calmly upright while the whole world tilts steeply and loose things slide and tumble past.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A medium-wide shot frames <Subject 1> full length, centred in the middle of the dusty main street, with a saloon, a general store, hitching posts with horses and a wooden boardwalk behind her, breathing easily, smiling warmly at the lens. Early in the shot the entire world around her tilts once, in a single smooth movement: the ground and the horizon slant steeply, high on the left side of the frame and low on the right, about thirty degrees. Then the world stays locked at exactly that steep angle for the rest of the shot, perfectly still, without rocking, wobbling or easing back toward level, while <Subject 1> stays perfectly upright and relaxed in the centre as if nothing is happening. Loose things slide and tumble sideways across the frame from the high left side to the low right side, downhill along the tilted ground, entering at the left edge, passing beside her and leaving at the right edge, never moving toward or away from the camera: a metal bucket bouncing end over end, a rolling barrel, a skidding wooden chair and a tumbleweed. She watches them go by with an amused grin, and the shot ends with the world still tilted at the same steep angle and the dust settling. As the shot plays out, <Subject 1> grins as things slide past.\n\noverall_soundscape: A hot dry wind, a horse snorting and a saloon door creaking, then a deep creaking groan as the ground tilts, and the clatter, scrape and tumble of things sliding past\n\nnon_diegetic_music: A playful plucked guitar riff with a comic slide\n",
+  "take": "incline_7_c6fcbfe7e07f.mp4",
+  "rebuilds": "exact"
+ },
+ "jib-up": {
+  "cast": [
+   "amber-main"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Jungle temple ruins"
+  },
+  "text": "@Amber turns her face up toward the rising camera, her expression opening from wariness into awe.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still among ancient temple ruins in the jungle, in a waist-up medium close-up, as the camera performs a jib up.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A waist-up medium close-up frames <Subject 1>, standing in place on the mossy temple steps, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with a mossy stepped pyramid, carved pillars, giant tree roots and a broken stone idol behind her. The camera jibs up at slow speed in one sweeping arc, rising from her chest height up and over her while tilting down to keep her in frame, and ends in a high angle looking down on her with ancient temple ruins in the jungle spread out around her. As the shot plays out, <Subject 1> turns her face up toward the rising camera, her expression opening from wariness into awe.\n\noverall_soundscape: Dense jungle sound, birds calling, insects buzzing and water trickling over stone\n\nnon_diegetic_music: N/A\n",
+  "take": "jib-up_7_6f247a921049.mp4",
+  "rebuilds": "exact"
+ },
+ "levitation": {
+  "cast": [
+   "allie"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Glass greenhouse"
+  },
+  "text": "Her expression eases from surprise into serene wonder.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> in a Victorian glass greenhouse, slowly rising off the ground and floating serenely in the air.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A medium shot frames <Subject 1> from the head to the knees, standing centred on the tiled path, with white iron arches, giant palms, tree ferns and hanging baskets behind her, breathing softly, looking into the lens with a calm, curious smile. The camera pulls out slowly to a full-length shot that shows the ground beneath her feet. Her heels lift, then her toes leave the ground and she rises smoothly upward until she is floating well above it, toes pointed down, a clear gap of empty air beneath her feet. Her hair and clothes lift and drift as if underwater, her arms float slightly out from her sides, and her expression eases from surprise into serene wonder as she hangs in the air. As the shot plays out, Her expression eases from surprise into serene wonder.\n\noverall_soundscape: Water dripping from leaves and the soft hiss of misters, then a faint airy whoosh as she lifts and a gentle resonant hum while she floats\n\nnon_diegetic_music: A soft ethereal pad with a slow rising harp arpeggio\n",
+  "take": "levitation_7_b07e906f7406.mp4",
+  "rebuilds": "exact"
+ },
+ "low-angle-hero": {
+  "cast": [
+   "kate"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Arctic shore"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still on a snow-covered arctic coastline, in a low-angle medium shot looking up, as the camera performs a low-angle hero shot.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A low-angle medium shot, the lens just above the ground and tilted up, looks up at <Subject 1> against the sky, standing in place on the snowy rocky shore, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with dark rocky cliffs, patches of green aurora borealis in the sky, still water, and an old wooden sailing ship with tall masts behind her. The camera stays low near the ground and tilted up at her the whole time, and pushes in at slow speed until she towers over the frame, her face high in the shot, looking down past the lens.\n\noverall_soundscape: A faint cold wind continues throughout, with distant creaking from the ship's rigging\n\nnon_diegetic_music: A single sustained low string note swells partway through the shot, then fades toward the end\n",
+  "take": "low-angle-hero_7_5e9856ff7dad.mp4",
+  "rebuilds": "exact"
+ },
+ "overhead-swing": {
+  "cast": [
+   "allie"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Beach at sunset"
+  },
+  "text": "@Allie looks up into the lens with a small, curious smile, tucks a strand of hair behind her ear as the breeze lifts it, and lowers her chin to follow the camera down.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still on a wide beach at sunset, in a top-down overhead shot, as the camera performs a swing down from overhead.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A top-down overhead shot, the camera a few metres directly above <Subject 1> with its lens pointing straight down, a bird's-eye view of <Subject 1> from head to toe with the ground around and looking up into the lens, standing in place on the wet sand, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with a lifeguard tower, wooden groynes, gentle waves and a distant pier behind her. The camera swings down in front of her in a smooth quarter-circle arc at slow speed, keeping the same distance from her the whole way: it travels from straight above her head down to her eye level on the side she is facing, tilting from pointing straight down to pointing level as it goes so her face stays centred, and ends face-on to her in a medium shot with the horizon level behind her. It never passes behind her, and it does not dive, fly forward or drop straight down. As the shot plays out, <Subject 1> looks up into the lens with a small, curious smile, tucks a strand of hair behind her ear as the breeze lifts it, and lowers her chin to follow the camera down.\n\noverall_soundscape: Gentle waves breaking and gulls calling in the distance\n\nnon_diegetic_music: N/A\n",
+  "take": "overhead-swing_7_54522a282c8e.mp4",
+  "rebuilds": "exact"
+ },
+ "pedestal-up": {
+  "cast": [
+   "amber-main"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Arctic shore"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still on a snow-covered arctic coastline, in a waist-up medium close-up, as the camera performs a pedestal up.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A waist-up medium close-up frames <Subject 1>, standing in place on the snowy rocky shore, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with dark rocky cliffs, patches of green aurora borealis in the sky, still water, and an old wooden sailing ship with tall masts behind her. The camera pedestals up at slow speed: the whole camera rises straight up with its lens kept level and never tilting, so <Subject 1> slides down through the frame and out of the bottom of it, and the view rises above her head to show a snow-covered arctic coastline stretching away into the distance.\n\noverall_soundscape: A faint cold wind continues throughout, with distant creaking from the ship's rigging\n\nnon_diegetic_music: A single sustained low string note swells partway through the shot, then fades toward the end\n",
+  "take": "pedestal-up_7_b3c1ef449bfe.mp4",
+  "rebuilds": "exact"
+ },
+ "pov": {
+  "cast": [
+   "mei"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Desert highway"
+  },
+  "text": "The viewer takes a few slow steps toward @Mei, who stands just ahead with her back to the camera, bent over the engine under the propped-up hood of an old dusty car at the roadside, tightening something with a spanner. The viewer stops a couple of steps behind her and calls out her name, warm and slightly surprised. @Mei turns around, recognises the viewer and breaks into a warm smile, then steps closer and holds out her hand, and the viewer's hand reaches in from the bottom of the frame to shake it.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 192,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>, with a straight dark brown shoulder-length bob and a beige crew-neck sweater.\n\nsummary:\n[reference generation] The target video shows <Subject 1> on an empty desert highway at golden hour, seen in a first-person POV shot: the viewer walks up behind her and calls her name, and she turns with a smile to shake the viewer's hand.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (a straight dark brown shoulder-length bob and a beige crew-neck sweater) are held identical to <Picture 1>; her hair and clothes from behind at first, and her face from the moment she turns around.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A first-person POV shot on the centre line of the highway: the camera is the eyes of someone taking a few slow steps forward toward <Subject 1>, who stands just ahead with her back to the camera, bent over the engine under the propped-up hood of an old dusty car at the roadside, tightening something with a spanner, busy at it and moving the whole time, with red sandstone mesas, wooden telephone poles along the shoulder, a faded road sign and the road running to the horizon around. The camera stops a couple of steps behind her, and the unseen viewer (S1), in a warm voice, slightly surprised and questioning, calls out: <d>[English] Mei?</d> <Subject 1> hears her name, stops what she is doing, turns around to face the camera, recognises the viewer and breaks into a warm smile. Then she steps closer and holds out her hand toward the lens, and one hand reaches in from the bottom right of the frame to take her hand, and they shake hands.\n\noverall_soundscape: A dry desert wind continues throughout, with the faint hum of the telephone wires, with soft footsteps approaching and a warm, surprised laugh\n\nnon_diegetic_music: N/A\n",
+  "take": "pov_7_ce1711917e15.mp4",
+  "rebuilds": "differs"
+ },
+ "rooftop-swing": {
+  "cast": [
+   "lena"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Neon megacity"
+  },
+  "text": "@Lena grins with breathless exhilaration as she lands.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> on a cyberpunk megacity street at night, leaping from a rooftop and swinging on a line in a huge arc across the gap between two tall buildings.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A wide shot frames <Subject 1> crouched on the edge of a high rooftop on the rain-slicked street, with towers covered in holographic adverts, an elevated train track, flying cars and neon stalls far below and around her, gripping a thin silver line that runs up to the top of a taller building across the street. She leaps off the edge and swings down on the line in one huge arc across the gap between the buildings, the street rushing past far below her, her hair and clothes streaming with the speed. The camera performs a tracking shot behind and slightly to one side of her through the air with large amplitude at fast speed, following the whole swing, so through the swing she faces away from the camera toward the next building, her back to the lens. At the bottom of the arc she sweeps up toward the next building, lets go at the top of the swing, sails through the air and lands crouched on its rooftop ledge, still facing away from the camera. Then she stands up and turns around on the spot, stepping and pivoting her whole body through a half turn so that she ends facing the camera, and looks back across the gap with a breathless grin. As the shot plays out, <Subject 1> grins with breathless exhilaration as she lands.\n\noverall_soundscape: A dense city hum, an overhead train rattling past and distant electronic announcements, then wind roaring past as she swings, the creak of the taut line, and a solid thud as she lands\n\nnon_diegetic_music: A driving, heroic orchestral theme with pounding drums\n",
+  "take": "rooftop-swing_7_b042f985fe22.mp4",
+  "rebuilds": "exact"
+ },
+ "set-on-fire": {
+  "cast": [
+   "lena"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Desert highway"
+  },
+  "text": "@Lena stays calm, then her eyes widen as the fire takes her.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> on an empty desert highway at golden hour, bursting into flames and becoming a standing figure of roaring fire.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, hair and clothing are held identical to <Picture 1> until the flames engulf them, and her silhouette stays her inside the fire.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A full-length static shot frames <Subject 1> standing centred on the centre line of the highway, with red sandstone mesas, wooden telephone poles along the shoulder, a faded road sign and the road running to the horizon behind her, breathing softly, hair stirring in the air, her expression calm and a little wary. She glances down as a bright orange glow kindles at the centre of her chest. In an instant the glow erupts into flame that races outward over her whole body, up through her hair and down her legs, until she is fully engulfed and standing as a tall figure of roaring fire, her shape and features still readable inside the flames. Embers and sparks swirl upward, and the flames light everything around her in flickering orange. As the shot plays out, <Subject 1> stays calm, then her eyes widen as the fire takes her.\n\noverall_soundscape: A dry desert wind continues throughout, with the faint hum of the telephone wires, then a sharp whoomph of ignition and a continuous roar and crackle of fire\n\nnon_diegetic_music: A deep low brass swell that rises with the ignition and holds\n",
+  "take": "set-on-fire_7_fb69fe6b4b0e.mp4",
+  "rebuilds": "exact"
+ },
+ "slow-pan-reveal": {
+  "cast": [
+   "sofia"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Arctic shore"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>, with long dark brown wavy hair, a white lace-trimmed cropped camisole and high-waisted beige trousers.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still on a snow-covered arctic coastline, in a wide shot of the place, as the camera performs a slow pan reveal.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (long dark brown wavy hair, a white lace-trimmed cropped camisole and high-waisted beige trousers) are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A wide shot looks across dark rocky cliffs, patches of green aurora borealis in the sky, still water, and an old wooden sailing ship with tall masts on the snowy rocky shore, with no one in view. The camera stays in one place and pans right at slow speed across the place, and comes to rest on <Subject 1> standing at the right, framing her in a medium shot as she looks out across the place.\n\noverall_soundscape: A faint cold wind continues throughout, with distant creaking from the ship's rigging\n\nnon_diegetic_music: A single sustained low string note swells partway through the shot, then fades toward the end\n",
+  "take": "slow-pan-reveal_7_05e643b6b761.mp4",
+  "rebuilds": "exact"
+ },
+ "super-dolly-out": {
+  "cast": [
+   "lena"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Throne room"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still in a vast gothic throne room, in a tight close-up, as the camera performs a super dolly out.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A tight close-up fills the frame with <Subject 1>'s face. <Subject 1> is standing in place on the long red carpet, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with towering stone columns, red banners, stained glass windows and a carved throne behind her. The camera pulls out with large amplitude at fast speed, racing backward away from her down the whole length of the long red carpet: rows of columns and banners rush past on both sides, the red carpet streams away underneath, and two stone columns sweep in past the edges of frame as the camera passes them, until she is a small, distant figure at the far end.\n\noverall_soundscape: The echoing hush of a vast stone hall and candles guttering\n\nnon_diegetic_music: N/A\n",
+  "take": "super-dolly-out_7_1578576159b4.mp4",
+  "rebuilds": "exact"
+ },
+ "thunder-god": {
+  "cast": [
+   "mei"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Neon megacity"
+  },
+  "text": "Her cool look hardens into fierce focus.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> on a cyberpunk megacity street at night, with eyes glowing white-hot as crackling lightning arcs around the body.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A full-length shot frames <Subject 1> standing centred on the rain-slicked street, with towers covered in holographic adverts, an elevated train track, flying cars and neon stalls behind her, breathing steadily, hands loose at her sides, looking into the lens with a cool, level expression that hardens into fierce focus. The camera pushes in slowly toward her. Her eyes begin to glow, brightening to a blinding white-blue light. Thin forks of electric lightning spark from her shoulders and hands, then grow into bright crackling bolts arcing around her body and up into the air, lighting everything around her in flashing blue. Her hair lifts and floats outward with the static charge as the energy builds. As the shot plays out, Her cool look hardens into fierce focus.\n\noverall_soundscape: A dense city hum, an overhead train rattling past and distant electronic announcements, then sharp electrical crackles and snapping lightning bolts building into a sustained sizzling roar\n\nnon_diegetic_music: A dark pulsing synth bass that rises in intensity with the lightning\n",
+  "take": "thunder-god_7_dc958410b82c.mp4",
+  "rebuilds": "exact"
+ },
+ "tilt-down-reveal": {
+  "cast": [
+   "claire"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Ice cave"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>, with straight shoulder-length auburn hair, light freckles and a burgundy knit jumper.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still in a glacier ice cave, in a shot looking up high above, as the camera performs a tilt down reveal.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (straight shoulder-length auburn hair, light freckles and a burgundy knit jumper) are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A camera angled steeply up frames translucent blue ice walls, hanging icicles, a frozen stream and the bright opening high above in the middle of the ice cave, with no one in view. The camera stays in one place and tilts down at slow speed, travelling down from high above to <Subject 1> standing below, and comes to rest framing her in a medium shot as she looks up.\n\noverall_soundscape: Water dripping from the icicles and the deep creak of the glacier\n\nnon_diegetic_music: N/A\n",
+  "take": "tilt-down-reveal_7_91e533ad9e92.mp4",
+  "rebuilds": "exact"
+ },
+ "tilt-up-reveal": {
+  "cast": [
+   "sofia"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Rain-soaked city street"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> standing still in a narrow city street at night in heavy rain, in a close shot of her feet, as the camera performs a tilt up reveal.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A chest-height camera angled down frames only <Subject 1>'s feet and lower legs, her face out of frame, standing in place in the middle of the wet street, breathing softly, hair and clothing stirring in the air, blinking and shifting her weight a little as people naturally do, with glowing shop signs, parked cars beaded with rain, puddles reflecting neon, and steam rising from a grate behind her. The camera stays in one place and tilts up at slow speed, travelling up her legs, body and shoulders, and comes to rest on her face in a medium close-up, so she is only revealed at the end.\n\noverall_soundscape: Steady heavy rain on the street and on car roofs throughout, with a distant siren passing\n\nnon_diegetic_music: N/A\n",
+  "take": "tilt-up-reveal_7_8d29d8471eb7.mp4",
+  "rebuilds": "exact"
+ },
+ "time-lapse": {
+  "cast": [
+   "kate"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Rain-soaked city street"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>, with shoulder-length dark brown wavy hair, blue-grey eyes and an oatmeal cable-knit sweater.\n\nsummary:\n[reference generation] The target video shows <Subject 1> in a narrow city street at night in heavy rain, standing still at normal speed while the world around rushes past in time-lapse.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing (shoulder-length dark brown wavy hair, blue-grey eyes and an oatmeal cable-knit sweater) are held identical to <Picture 1> in every frame.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A static medium-wide shot, locked off on a tripod, frames <Subject 1> standing still and centred in the middle of the wet street, with glowing shop signs, parked cars beaded with rain, puddles reflecting neon, and steam rising from a grate around her. Everything around her plays as a fast time-lapse: crowds of people stream past on both sides as soft blurred streaks, cars and lights race by, clouds rush across the sky and the light shifts and flickers as the hours pass. Only <Subject 1> moves at normal speed, breathing slowly, blinking, and turning her head a little, perfectly sharp in the middle of the rushing blur.\n\noverall_soundscape: Steady heavy rain on the street and on car roofs throughout, with a distant siren passing, sped up into a rushing, washing blur of footsteps, voices and traffic\n\nnon_diegetic_music: N/A\n",
+  "take": "time-lapse_7_b2b97f37c017.mp4",
+  "rebuilds": "exact"
+ },
+ "truck-right": {
+  "cast": [
+   "allie"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Glass greenhouse"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> walking steadily forward in a Victorian glass greenhouse, in a level, symmetrical side-on medium shot, as the camera performs a lateral tracking shot.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A level, symmetrical medium shot side-on to <Subject 1>, walking steadily forward on the tiled path, hair flying and clothing snapping with the movement, with white iron arches, giant palms, tree ferns and hanging baskets behind her. She walks from left to right across the frame, and the camera trucks right at the same pace, gliding sideways in a perfectly straight line and keeping her in profile at the centre of the frame, while the setting behind her slides past from right to left in flat, parallel layers.\n\noverall_soundscape: Water dripping from leaves and the soft hiss of misters\n\nnon_diegetic_music: N/A\n",
+  "take": "truck-right_7_bb77e2032a9e.mp4",
+  "rebuilds": "exact"
+ },
+ "vanish": {
+  "cast": [
+   "claire"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Subway platform"
+  },
+  "text": "@Claire smiles at the lens before she vanishes.",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> on an empty subway platform, disappearing in an instant, leaving the empty clothes to collapse and fall flat.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> until she vanishes, and the empty clothes stay the same clothes.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A wide static shot frames <Subject 1> full length, standing small and centred on the platform, with tiled walls, a row of steel pillars, fluorescent lights and the dark tunnel mouth around her, smiling at the lens, shifting her weight and brushing her hair back. Suddenly her body disappears in an instant: for a split second her clothes keep her shape, standing upright on their own and empty, then they crumple and drop straight down, landing flat in a small soft heap on the ground. The camera holds the wide shot on the empty place and the little pile of clothes, nothing else moving. As the shot plays out, <Subject 1> smiles at the lens before she vanishes.\n\noverall_soundscape: The buzz of fluorescent tubes and a distant train rumbling in the tunnel, then a sudden soft pop of air, the rustle and soft flop of fabric hitting the ground, and silence\n\nnon_diegetic_music: N/A\n",
+  "take": "vanish_7_a32ef9cfd3cc.mp4",
+  "rebuilds": "exact"
+ },
+ "walk-past-camera": {
+  "cast": [
+   "kate"
+  ],
+  "objects": [],
+  "location": {
+   "scene": "Autumn forest track"
+  },
+  "text": "",
+  "extras": {},
+  "seed": 7,
+  "width": 1344,
+  "height": 768,
+  "length": 124,
+  "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> walking steadily forward in a pine forest in late autumn, in a wide shot, as the camera performs a walk-past shot.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> in every frame with zero drift.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A wide shot frames <Subject 1>, walking steadily forward on the forest track, hair flying and clothing snapping with the movement, with tall straight pine trunks, a carpet of orange needles, low mist between the trees, and shafts of sunlight behind her. She walks straight toward the lens, growing from a full figure to a close-up, and passes right beside the camera; the camera pans right at fast speed as she goes by, and follows her from behind as she walks on into the distance, her back to the camera.\n\noverall_soundscape: Birdsong and a light breeze through the pines throughout, with needles crunching underfoot\n\nnon_diegetic_music: N/A\n",
+  "take": "walk-past-camera_7_8060406e55e8.mp4",
+  "rebuilds": "exact"
+ }
+}

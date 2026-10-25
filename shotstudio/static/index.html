@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>H3 Shot Studio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23f2a541' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23f2a541'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css?v=29">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand"><span class="mark" aria-hidden="true"></span><span>H3 Shot Studio</span></div>
+    <nav>
+      <button type="button" class="nav on" data-page="create" title="Make a shot, and see your renders"><i class="ic ic-home"></i>Create</button>
+      <button type="button" class="nav" data-page="shots" title="The camera moves and effects, each with a take that worked"><i class="ic ic-move"></i>Shots</button>
+      <div class="nav-label">Library</div>
+      <button type="button" class="nav" data-page="cast" title="Your people: their photo, look and voice"><i class="ic ic-at"></i>Cast</button>
+      <button type="button" class="nav" data-page="props" title="Things that can appear in a shot"><i class="ic ic-obj"></i>Props</button>
+      <button type="button" class="nav" data-page="locations" title="Places, as words, a picture or both"><i class="ic ic-loc"></i>Locations</button>
+    </nav>
+    <div class="side-foot"><div class="target" id="target"></div></div>
+  </aside>
+
+  <main class="main">
+    <section class="feed" id="feed">
+      <div class="hero" id="hero">
+        <div class="fan" id="fan"></div>
+        <h1>Direct a named camera move</h1>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+    <section class="page" id="page" hidden></section>
+
+    <div class="dock">
+      <div class="toast" id="toast" hidden></div>
+      <div class="composer">
+        <div class="chips" id="chips"></div>
+        <div class="box">
+          <div class="effect-note" id="effect-note" hidden></div>
+          <div class="editor">
+            <div class="hl" id="hl" aria-hidden="true"></div>
+            <textarea id="text" rows="3" spellcheck="false" placeholder='The shot, as H3 will see it. Type @ to bring in a character or object, # to change the camera move.'></textarea>
+            <div class="mention-pop" id="mention-pop" hidden></div>
+          </div>
+          <div class="refs" id="refs" hidden></div>
+          <div class="bar">
+            <div class="seg" id="aspect" role="radiogroup" aria-label="Aspect ratio"></div>
+            <div class="seg" id="res" role="radiogroup" aria-label="Resolution"></div>
+            <div class="seg" id="dur" role="radiogroup" aria-label="Duration"></div>
+            <label class="pill seed" title="Same seed and settings give the same clip. Leave empty for a new one each time.">Seed <input id="seed" type="number" min="0" placeholder="auto"></label>
+            <button type="button" class="ghost-btn" id="prompt-btn" title="See and edit the exact prompt H3 will receive">Advanced prompt</button>
+            <button type="button" class="go" id="go" title="Render the shot">Generate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div class="scrim" id="scrim" hidden>
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <header>
+      <h2 id="modal-title"></h2>
+      <button type="button" class="x" id="modal-close" aria-label="Close">✕</button>
+    </header>
+    <div class="modal-body single" id="modal-body"></div>
+  </div>
+</div>
+
+<script src="/app.js?v=43"></script>
+</body>
+</html>

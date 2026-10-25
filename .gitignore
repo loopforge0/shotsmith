@@ -1,0 +1,11 @@
+.venv/
+outputs/
+uploads/
+.playwright-mcp/
+__pycache__/
+shotstudio/models.json
+
+# Experiments that need workflows from other, private repos.
+scripts/refine_ltx.py
+scripts/upscale_seedvr2.py
+scripts/upscale_h3latent.py
