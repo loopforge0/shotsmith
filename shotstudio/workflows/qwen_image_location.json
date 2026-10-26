@@ -128,7 +128,7 @@
  "save": {
   "class_type": "SaveImageAdvanced",
   "inputs": {
-   "filename_prefix": "shotstudio_location",
+   "filename_prefix": "shotsmith_image",
    "format": "png",
    "format.bit_depth": "8-bit",
    "format.input_color_space": "sRGB",

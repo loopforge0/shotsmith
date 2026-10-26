@@ -12,5 +12,5 @@
   "12": {"class_type": "VAEDecode", "inputs": {"samples": ["11", 0], "vae": ["3", 0]}},
   "13": {"class_type": "VAEDecodeAudio", "inputs": {"samples": ["11", 0], "vae": ["4", 0]}},
   "14": {"class_type": "CreateVideo", "inputs": {"images": ["12", 0], "audio": ["13", 0], "fps": 24}},
-  "15": {"class_type": "SaveVideo", "inputs": {"video": ["14", 0], "filename_prefix": "video/H3ShotStudio", "format": "auto", "codec": "auto"}}
+  "15": {"class_type": "SaveVideo", "inputs": {"video": ["14", 0], "filename_prefix": "video/Shotsmith", "format": "auto", "codec": "auto"}}
 }
