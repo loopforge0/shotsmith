@@ -767,20 +767,20 @@
  },
  "vanish": {
   "cast": [
-   "claire"
+   "sofia"
   ],
   "objects": [],
   "location": {
    "scene": "Subway platform"
   },
-  "text": "@Claire smiles at the lens before she vanishes.",
+  "text": "@Sofia smiles at the lens before she vanishes.",
   "extras": {},
   "seed": 7,
   "width": 1344,
   "height": 768,
   "length": 124,
   "prompt": "subject_definitions:\n<Subject 1> is the person in <Picture 1>.\n\nsummary:\n[reference generation] The target video shows <Subject 1> on an empty subway platform, disappearing in an instant, leaving the empty clothes to collapse and fall flat.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, identity and clothing are held identical to <Picture 1> until she vanishes, and the empty clothes stay the same clothes.\n\ndetailed_description:\nThe target video is live-action and cinematic.\n[Shot 1] A wide static shot frames <Subject 1> full length, standing small and centred on the platform, with tiled walls, a row of steel pillars, fluorescent lights and the dark tunnel mouth around her, smiling at the lens, shifting her weight and brushing her hair back. Suddenly her body disappears in an instant: for a split second her clothes keep her shape, standing upright on their own and empty, then they crumple and drop straight down, landing flat in a small soft heap on the ground. The camera holds the wide shot on the empty place and the little pile of clothes, nothing else moving. As the shot plays out, <Subject 1> smiles at the lens before she vanishes.\n\noverall_soundscape: The buzz of fluorescent tubes and a distant train rumbling in the tunnel, then a sudden soft pop of air, the rustle and soft flop of fabric hitting the ground, and silence\n\nnon_diegetic_music: N/A\n",
-  "take": "vanish_7_a32ef9cfd3cc.mp4",
+  "take": "vanish_7_cfb72d166412.mp4",
   "rebuilds": "exact"
  },
  "walk-past-camera": {

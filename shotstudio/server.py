@@ -1,4 +1,4 @@
-"""H3 Shot Studio: pick a named camera shot, cast it, set the location, render it.
+"""Shotsmith: pick a named camera shot, cast it, set the location, render it.
 
     python -m shotstudio.server            # http://127.0.0.1:7860
 """
@@ -45,7 +45,7 @@ BUNDLED_SCENE_WORDS = ("ENVIRONMENT", "PLACE", "ENVIRONMENT_PREP", "ENVIRONMENT_
 ELEMENTS = UPLOADS / "elements.json"
 VOICES = UPLOADS / "voices.json"
 
-app = FastAPI(title="H3 Shot Studio")
+app = FastAPI(title="Shotsmith")
 renderer = Renderer(OUTPUTS)
 
 
@@ -400,6 +400,11 @@ async def upload(file: UploadFile) -> dict:
 # Appended to every generated location, so it comes back as an empty place H3 can put people in.
 LOCATION_STYLE = ("A wide cinematic photograph, eye level, natural perspective, no people, empty of any person "
                   "or figure, realistic film still with fine detail and soft depth.")
+# A character's picture is a reference plate like the bundled ones: one person, from the knees up so
+# the clothing shows (Fill in from the photo reads it from there), on a plain ground.
+CHARACTER_STYLE = ("A realistic photograph of one person standing and facing the camera, framed from the knees up, "
+                   "a relaxed neutral expression, their whole outfit clearly visible, a plain light grey studio "
+                   "background, soft even light, sharp natural detail. Nobody else in the picture.")
 
 
 class LocationRequest(BaseModel):
@@ -449,9 +454,29 @@ def generate_location(req: LocationRequest) -> dict:
     if not text:
         raise HTTPException(422, "Describe the place first.")
 
+    return make_image(f"{text.rstrip('.')}. {LOCATION_STYLE}", 1344, 768)
+
+
+@app.post("/api/characters/generate")
+def generate_character(req: LocationRequest) -> dict:
+    """Start making a character's picture from a description, the same way as a place's: a portrait
+    plate the panel then names, fills in from the photo and saves. Followed on its GET."""
+    text = req.description.strip()
+    if not text:
+        raise HTTPException(422, "Describe the person first.")
+    return make_image(f"{text.rstrip('.')}. {CHARACTER_STYLE}", 864, 1152)
+
+
+@app.get("/api/characters/generate/{task_id}")
+def character_progress(task_id: str) -> dict:
+    return generate_progress(task_id)
+
+
+def make_image(prompt: str, width: int, height: int) -> dict:
+    """Qwen Image 2.1 turbo on the same ComfyUI, in the background; the result is like an upload."""
     def work(task: tasks.Task) -> dict:
         tmp = UPLOADS / f"gen-{task.id}.png"
-        generate_image(f"{text.rstrip('.')}. {LOCATION_STYLE}", tmp, on_progress=task.progress)
+        generate_image(prompt, tmp, width=width, height=height, on_progress=task.progress)
         data = tmp.read_bytes()
         name = f"{hashlib.sha256(data).hexdigest()[:16]}.png"
         tmp.replace(UPLOADS / name)
@@ -607,7 +632,7 @@ def main() -> None:
     import uvicorn
 
     port = int(os.environ.get("PORT", "7860"))
-    print(f"H3 Shot Studio on http://127.0.0.1:{port}  ->  rendering on {target()}")
+    print(f"Shotsmith on http://127.0.0.1:{port}  ->  rendering on {target()}")
     uvicorn.run(app, host="127.0.0.1", port=port, log_level="warning")
 
 

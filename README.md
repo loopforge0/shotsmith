@@ -1,4 +1,4 @@
-# H3 Shot Studio
+# Shotsmith
 
 Pick a named camera move, cast it with a character photo, describe the scene, and render it with
 MiniMax H3, on your own GPU or on Comfy Cloud.
@@ -126,7 +126,9 @@ Moves that need two or three characters, like the whip pan and rack focus, use t
   H3 takes at most 9 reference images, a location image included; the chip shows the count.
   **Fill in from the photo** (recommended) writes a new character's look, hair and clothing, the way
   the bundled characters have theirs, in about 10 seconds; check it before saving. The pronoun is
-  yours to set; it is not read from the photo.
+  yours to set; it is not read from the photo. No photo: on the Cast page, **Make a character from
+  words** describes the person and Qwen Image 2.1 turbo makes their picture (one person from the knees
+  up on a plain ground, about 20 seconds), ready to name and fill in like an upload.
 - **Camera move** (or type `#`): pick another move without leaving Create.
 - **Location**: pick one of the twenty-three that come with the app (a desert highway to a dungeon,
   Mars and a space station) or one you added. A place is a picture and the words that describe it,
@@ -215,7 +217,7 @@ Settings that are fixed on purpose, from the shot library's tests:
 
 You need:
 
-- **ComfyUI 0.41.0 or later**, which has the native MiniMax H3, Qwen Image 2.1, TextGenerate and
+- **ComfyUI 0.41.0 or later** ([install it](https://github.com/comfyanonymous/ComfyUI#manual-install-windows-linux)), which has the native MiniMax H3, Qwen Image 2.1, TextGenerate and
   SaveText nodes this app uses. It was developed on 0.41.0. No custom nodes.
 - **Python 3.12** for the app (3.12.9 was tested).
 - **ffmpeg and ffprobe** on your PATH. The crash zooms use them to speed up the zoom after rendering.
@@ -233,6 +235,21 @@ You need:
 The first four are all a render needs. Without the Qwen files, rendering still works, and the
 describe and Make image buttons report the missing file.
 
+They are on Hugging Face, in [Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)
+and [Comfy-Org/Qwen-Image-2.1](https://huggingface.co/Comfy-Org/Qwen-Image-2.1), in the same
+folders. From the folder that holds ComfyUI (about 60 GB in all):
+
+```bash
+pip install -U huggingface_hub
+hf download Comfy-Org/MiniMax-H3 --local-dir ComfyUI/models \
+  diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors \
+  text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors \
+  vae/minimax_h3_video_vae_fp16.safetensors vae/minimax_h3_audio_vae_fp32.safetensors
+hf download Comfy-Org/Qwen-Image-2.1 --local-dir ComfyUI/models \
+  diffusion_models/qwen_image_2.1_turbo_int8_convrot.safetensors \
+  text_encoders/qwen3vl_8b_int8_convrot.safetensors vae/qwen_image_2.1_vae_bf16.safetensors
+```
+
 Different file names for the H3 files? Put them in `shotstudio/models.json`:
 
 ```json
@@ -243,6 +260,8 @@ Then, with ComfyUI running on port 8188 (on Linux and macOS, `.venv/bin/` in pla
 `.venv/Scripts/`):
 
 ```bash
+git clone https://github.com/loopforge0/shotsmith.git
+cd shotsmith
 python -m venv .venv
 .venv/Scripts/pip install -r requirements.txt
 .venv/Scripts/comfy-api-proxy start --state-dir outputs/proxy-state   # the Comfy API v2 on 127.0.0.1:8189

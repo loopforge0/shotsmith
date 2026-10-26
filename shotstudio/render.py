@@ -9,6 +9,7 @@ from __future__ import annotations
 import copy
 import json
 import os
+import queue
 import random
 import threading
 import time
@@ -54,6 +55,76 @@ def explain(exc: Exception) -> str:
     if missing:
         return "ComfyUI does not have " + " or ".join(dict.fromkeys(missing)) + ". See the README's model list."
     return f"{type(exc).__name__}: {exc}"
+
+
+# A job's event stream that says nothing for this long is opened again (at most REOPEN times).
+SILENCE = 240
+REOPEN = 3
+ENDED = {"succeeded", "failed", "canceled", "cancelled", "expired"}
+
+
+def events(handle):
+    """`handle.events()`, opened again when it falls silent.
+
+    ComfyUI keeps one socket per client id and, when any socket with that id closes, forgets the id,
+    even when a newer socket has taken it. After a restart the old listener closes late and cuts the
+    new one off without ending its stream, so it would wait in silence until the job ends. A fresh
+    stream registers the id again; one left behind ends when the job does.
+
+    A job waiting in the queue is silent by nature, so it is never reopened then; and when the proxy
+    has no stream to give (it allows a few at a time), the job is followed by polling instead."""
+    q: queue.Queue = queue.Queue()
+
+    def pump(gen: int) -> None:
+        try:
+            for ev in handle.events():
+                q.put((gen, ev))
+        except Exception as exc:  # handed to the reader, never swallowed
+            q.put((gen, exc))
+        q.put((gen, None))
+
+    gen = reopened = 0
+    threading.Thread(target=pump, args=(gen,), daemon=True).start()
+    while True:
+        try:
+            g, ev = q.get(timeout=SILENCE)
+        except queue.Empty:
+            handle.refresh()
+            if handle.status in ENDED:
+                yield StatusChange(status=handle.status)
+                return
+            if handle.status in ("queued", "pending"):
+                continue
+            if reopened < REOPEN:
+                reopened, gen = reopened + 1, gen + 1
+                threading.Thread(target=pump, args=(gen,), daemon=True).start()
+            continue
+        ended = isinstance(ev, StatusChange) and ev.status in ENDED
+        if g != gen and not ended:
+            continue
+        if ev is None:
+            return
+        if isinstance(ev, Exception):
+            if "concurrent event streams" not in str(ev):
+                raise ev
+            yield from poll(handle)
+            return
+        yield ev
+        if ended:
+            return
+
+
+def poll(handle, every: float = 5):
+    """Follow a job by its status alone, when no event stream is to be had."""
+    last = None
+    while True:
+        handle.refresh()
+        if handle.status != last:
+            last = handle.status
+            yield StatusChange(status=handle.status)
+        if handle.status in ENDED:
+            return
+        time.sleep(every)
 
 
 def target() -> str:
@@ -111,6 +182,7 @@ class RenderJob:
     video: str | None = None
     error: str | None = None
     started: float = field(default_factory=time.time)
+    ran: float | None = None   # when ComfyUI began running it: the time before that was spent in the queue
     finished: float | None = None
     inputs: dict | None = None   # what the page sent (cast, location, sound, size), for Recreate
     canceling: bool = False
@@ -119,7 +191,8 @@ class RenderJob:
         d = {k: getattr(self, k) for k in ("id", "shot", "seed", "width", "height", "length",
                                             "status", "progress", "message", "video", "error",
                                             "started", "finished", "inputs")}
-        d["elapsed"] = round((self.finished or time.time()) - self.started)
+        # How long it has run, not counting the wait in ComfyUI's queue (None until it starts).
+        d["elapsed"] = round((self.finished or time.time()) - self.ran) if self.ran else None
         return d
 
 
@@ -150,7 +223,7 @@ class Renderer:
             self.jobs[job_id] = RenderJob(
                 id=job_id, shot=shot, prompt=prompt.read_text(encoding="utf-8"), seed=int(seed),
                 width=h3["width"], height=h3["height"], length=h3["length"], status="succeeded",
-                progress=1.0, message="done", video=video.name, started=mtime - took, finished=mtime,
+                progress=1.0, message="done", video=video.name, started=mtime - took, ran=mtime - took, finished=mtime,
                 inputs=inputs)
 
     def _resume_pending(self) -> None:
@@ -161,16 +234,15 @@ class Renderer:
             job = RenderJob(id=d["id"], shot=d["shot"], prompt=d["prompt"], seed=d["seed"], width=d["width"],
                             height=d["height"], length=d["length"], status="running",
                             message="picking up after a restart", comfy_job_id=d["comfy_job_id"], started=d["started"],
-                            inputs=d.get("inputs"))
+                            ran=d.get("ran"), inputs=d.get("inputs"))
             self.jobs[job.id] = job
 
             def resume(job=job, graph_text=d["graph"]) -> None:
                 try:
                     self._finish(job, Comfy().jobs.get(job.comfy_job_id), graph_text)
                 except Exception as exc:  # surfaced to the UI, never swallowed
-                    job.status, job.error = "failed", explain(exc)
+                    job.status, job.error = "failed", f"Could not reach the render on ComfyUI ({explain(exc)}). It is picked up again when the app restarts."
                     job.finished = time.time()
-                    (self.pending_dir / f"{job.id}.json").unlink(missing_ok=True)
 
             threading.Thread(target=resume, daemon=True).start()
 
@@ -221,7 +293,10 @@ class Renderer:
     def _finish(self, job: RenderJob, handle, graph_text: str) -> None:
         """Follow a submitted job to its end and save the video, its prompt and its workflow."""
         try:
-            for event in handle.events():
+            for event in events(handle):
+                if job.ran is None and (isinstance(event, Progress) or getattr(event, "status", None) == "running"):
+                    job.ran = time.time()
+                    self._note_ran(job)
                 match event:
                     case Progress() as p:
                         # Progress is per node. Only the sampler has a real step count, so the
@@ -259,7 +334,7 @@ class Renderer:
             (self.out_dir / f"{job.shot}_{job.seed}_{job.id}.workflow.json").write_text(
                 graph_text, encoding="utf-8")
             (self.out_dir / f"{job.shot}_{job.seed}_{job.id}.inputs.json").write_text(
-                json.dumps({**(job.inputs or {}), "took": round(time.time() - job.started)}, indent=1), encoding="utf-8")
+                json.dumps({**(job.inputs or {}), "took": round(time.time() - (job.ran or job.started))}, indent=1), encoding="utf-8")
             job.video, job.status, job.progress, job.message = name, "succeeded", 1.0, "done"
         except Exception as exc:  # surfaced to the UI, never swallowed
             if job.canceling:
@@ -268,7 +343,31 @@ class Renderer:
                 job.status, job.error = "failed", explain(exc)
         finally:
             job.finished = time.time()
-            (self.pending_dir / f"{job.id}.json").unlink(missing_ok=True)
+            if not self._forget(job, handle) and job.status == "failed":
+                job.error = f"Lost contact with the render ({job.error}). It goes on in ComfyUI and is picked up again when the app restarts."
+
+    def _note_ran(self, job: RenderJob) -> None:
+        """Keep when the job began running in its pending note, so its run time survives a restart."""
+        note = self.pending_dir / f"{job.id}.json"
+        try:
+            d = json.loads(note.read_text(encoding="utf-8"))
+            note.write_text(json.dumps({**d, "ran": job.ran}), encoding="utf-8")
+        except (OSError, ValueError):
+            pass   # no note (a job from before notes kept this): its time starts at the resume
+
+    def _forget(self, job: RenderJob, handle) -> bool:
+        """Drop a job's pending note once ComfyUI is done with it. A listener that fails while the job
+        still runs (the app shutting down, a dropped connection) keeps the note, so the next start
+        picks the job up again. Returns whether the note was dropped."""
+        if job.status != "succeeded":
+            try:
+                handle.refresh()
+                if handle.status not in ENDED:
+                    return False
+            except Exception:
+                return False
+        (self.pending_dir / f"{job.id}.json").unlink(missing_ok=True)
+        return True
 
     def cancel(self, job_id: str) -> RenderJob:
         """Stop a render: ComfyUI interrupts it if it is running, or takes it out of the queue."""
@@ -296,7 +395,7 @@ IMAGE_TEMPLATE = json.loads((ROOT / "workflows" / "qwen_image_location.json").re
 
 def generate_image(prompt: str, out: Path, seed: int | None = None, width: int = 1344,
                    height: int = 768, on_progress=None) -> Path:
-    """Text to image with Qwen Image 2.1 turbo (8 steps), for location plates. Blocks until done;
+    """Text to image with Qwen Image 2.1 turbo (8 steps), for location and character plates. Blocks until done;
     `on_progress(stage, step, steps)` hears how it is going."""
     graph = copy.deepcopy(IMAGE_TEMPLATE)
     graph["encode"]["inputs"]["prompt"] = prompt

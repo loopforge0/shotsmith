@@ -1094,13 +1094,22 @@ function trackJob(job) {
     $("#grid").prepend(card);
   }
   paintCard(card, job);
-  if (DONE.includes(job.status)) return;
-  const es = new EventSource(`/api/jobs/${job.id}/events`);
-  es.onmessage = e => {
-    const j = JSON.parse(e.data);
-    paintCard(card, j);
-    if (DONE.includes(j.status)) es.close();
-  };
+  if (!DONE.includes(job.status)) followJobs();
+}
+
+/** One poll for every render still going. A stream per render would hold a connection each, and a
+ * browser allows six per server: with six renders queued the page could no longer reach it. */
+let following = null;
+function followJobs() {
+  following ??= setInterval(async () => {
+    try {
+      for (const j of await api("/api/jobs")) {
+        const card = cards.get(j.id);
+        if (card && !DONE.includes(card.job.status)) paintCard(card, j);
+      }
+    } catch { return; }   // the server is restarting: try again on the next tick
+    if ([...cards.values()].every(c => DONE.includes(c.job.status))) { clearInterval(following); following = null; }
+  }, 1500);
 }
 
 function paintCard(card, j) {
@@ -1122,7 +1131,7 @@ function paintCard(card, j) {
   if (prev && !DONE.includes(prev.status) && !over && card.querySelector(".track")) {
     // Still running: move the bar and the message, and leave the Cancel button as it is.
     card.querySelector(".track i").style.width = `${Math.round(j.progress * 100)}%`;
-    card.querySelector(".run small").textContent = `${j.message || j.status} · ${fmt(j.elapsed)}`;
+    card.querySelector(".run small").textContent = j.elapsed ? `${j.message || j.status} · ${fmt(j.elapsed)}` : j.message || j.status;
     card.querySelector(".cap").replaceWith(capEl);
     return;
   }
@@ -1131,7 +1140,7 @@ function paintCard(card, j) {
     s.still ? h("img", { src: s.still, alt: "" }) : h("div", {}),
     h("div", { class: "run" },
       over ? h("span", {}, j.status === "failed" ? "Failed" : "Canceled") : h("span", { class: "track" }, h("i", { style: `width:${Math.round(j.progress * 100)}%` })),
-      h("small", {}, j.status === "failed" ? j.error : over ? "" : `${j.message || j.status} · ${fmt(j.elapsed)}`),
+      h("small", {}, j.status === "failed" ? j.error : over ? "" : j.elapsed ? `${j.message || j.status} · ${fmt(j.elapsed)}` : j.message || j.status),
       over ? h("button", { type: "button", class: "btn", onclick: ev => { ev.stopPropagation(); deleteJob(j).catch(err => toast(err.message)); } }, "Remove")
         : twoStep("Cancel", "Cancel this render?", () => api(`/api/jobs/${j.id}/cancel`, {}).then(x => paintCard(card, x)))),
     capEl);
@@ -1360,6 +1369,24 @@ function libraryPage(kind) {
             } }, "Make an image"))));
   };
 
+  const makePerson = () => {
+    let words = "";
+    return h("section", { class: "section" }, h("h3", {}, "Make a character from words"),
+      h("div", { class: "makeloc" },
+        h("textarea", { rows: 2, placeholder: "a woman in her thirties with a short silver bob, a mustard raincoat over a black turtleneck", oninput: ev => { words = ev.target.value; } }),
+        h("div", { class: "makeloc-btns" },
+          h("button", { type: "button", class: "btn", title: "Make a picture of them with Qwen Image 2.1 turbo, then name them and fill in their look from it.",
+            onclick: async ev => {
+              if (!words.trim()) return toast("Describe the person first.");
+              try {
+                const up = await followTask(ev.currentTarget, "/api/characters/generate", { description: words });
+                draft = { ref: up.ref, img: up.url, name: "", pronoun: "they", type: "person", look: "" };
+                sel = null;
+                paint();
+              } catch (err) { toast(err.message); }
+            } }, "Make an image"))));
+  };
+
   const paint = () => page.replaceChildren(
     h("header", { class: "page-head" }, h("div", {}, h("h1", {}, title), h("p", {}, blurb))),
     h("div", { class: "lib" },
@@ -1379,7 +1406,7 @@ function libraryPage(kind) {
               paint();
             } catch (err) { toast(err.message); }
           }, kind === "location", { character: "Upload a photo of a person", object: "Upload a photo of an object", location: "Upload a photo of a place, with nobody in it" }[kind])),
-        kind === "location" ? makePlace() : ""),
+        kind === "location" ? makePlace() : kind === "character" ? makePerson() : ""),
       editor()));
   paint();
 }

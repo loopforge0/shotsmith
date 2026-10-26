@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Set up a RunPod GPU pod to render H3 Shot Studio's native-resolution takes: the same ComfyUI commit,
+# Set up a RunPod GPU pod to render Shotsmith's native-resolution takes: the same ComfyUI commit,
 # PyTorch build, comfy-kitchen and model files as the local machine, all on /workspace so a stopped pod
 # keeps them. Logs to /workspace/setup.log; the last line is "SETUP DONE" when ComfyUI is up on :8188.
 #

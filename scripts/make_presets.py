@@ -31,6 +31,8 @@ TAKES = {"cutaway-montage": OUT / "native" / "cutaway-montage_7_manual00050.work
 # Inputs the prompt cannot give back, because the recipe was reworded after the take or the take's
 # scene was written into the move itself (the POV). Read off each take's prompt by hand.
 MANUAL = {
+    # The vanish keeps its take's prompt, but its default cast is Sofia, set by hand in presets.json:
+    # a long-sleeved character leaves the hands behind when the body goes (vanish_7_cfb72d166412).
     # The orbit's take hands over an object and has two spoken lines: the app writes those as an
     # @object and quoted speech, with each voice described where it is spoken.
     "orbit-360": {"objects": ["lantern"],
